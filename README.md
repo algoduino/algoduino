@@ -14,7 +14,7 @@ You can find installation instructions and detailed instructions on how to use t
 
 ## Example
 
-> Gets the current node status.
+> Gets the current node status
 
 ```cpp
 #include <Algoduino.h>
@@ -35,6 +35,21 @@ void loop()
 }
 ```
 
+> Output from Serial Monitor
+
+```json
+{
+   "lastRound":6907687,
+   "lastConsensusVersion":"https://github.com/algorandfoundation/specs/tree/8096e2df2da75c3339986317f9abe69d4fa86b4b",
+   "nextConsensusVersion":"https://github.com/algorandfoundation/specs/tree/e5f565421d720c6f75cdd186f7098495caf9101f",
+   "nextConsensusVersionRound":6915065,
+   "nextConsensusVersionSupported":true,
+   "timeSinceLastRound":2319203734,
+   "catchupTime":0,
+   "hasSyncedSinceStartup":false,
+   "stoppedAtUnsupportedRound":false
+}
+```
 ## Security
 
 If you discover a security vulnerability within this package, please send an e-mail to hello@algoduino.com. All security vulnerabilities will be promptly addressed.
