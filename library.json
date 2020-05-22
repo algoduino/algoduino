@@ -1,0 +1,22 @@
+  {
+    "name": "Algoduino",
+    "keywords": "algorand, crypto, blockchain, iot, arduino",
+    "description": "A simple API client implementation in C++ for the Algorand Blockchain.",
+    "homepage": "https://github.com/algoduino/algoduino",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/algoduino/algoduino.git"
+    },
+    "version": "0.1",
+    "authors": [
+      {
+        "name": "Algoduino",
+        "email": "hello@algoduino.com",
+        "url": "https://github.com/algoduino"
+      }
+    ],
+    "frameworks": "arduino",
+    "platforms": [
+      "espressif8266"
+    ]
+}

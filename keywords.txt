@@ -1,0 +1,42 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Algoduino	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getHealth	KEYWORD2
+getAccountInformation	KEYWORD2
+getConfirmedTransactionInformation	KEYWORD2
+getConfirmedTransactionsList	KEYWORD2
+getPendingTransactionInformation	KEYWORD2
+getPendingTransactionsList	KEYWORD2
+getAssetInformation	KEYWORD2
+getAssetsList	KEYWORD2
+getBlock	KEYWORD2
+getLedgerSupply	KEYWORD2
+getStatus	KEYWORD2
+getTransactionInformation	KEYWORD2
+getTransactionsFee	KEYWORD2
+getTransactionParams	KEYWORD2
+getVersions	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BETANET	LITERAL1
+TESTNET	LITERAL1
+MAINNET	LITERAL1
