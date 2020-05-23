@@ -2,7 +2,7 @@
     "name": "Algoduino",
     "keywords": "algorand, crypto, blockchain, iot, arduino",
     "description": "A simple API client implementation in C++ for the Algorand Blockchain.",
-    "homepage": "https://github.com/algoduino/algoduino",
+    "homepage": "https://algoduino.com/",
     "repository": {
       "type": "git",
       "url": "https://github.com/algoduino/algoduino.git"
