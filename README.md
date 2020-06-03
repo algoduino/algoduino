@@ -14,12 +14,12 @@ You can find installation instructions and detailed instructions on how to use t
 
 ## Example
 
-> Gets the current node status
+> Get the information of a single transaction.
 
 ```cpp
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", TESTNET);
+Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>);
 
 void setup()
 {
@@ -29,26 +29,66 @@ void setup()
 
 void loop()
 {
-  String status = myAlgoduino.getStatus();
-  Serial.println(status);  
-  delay(2000);
+  TransactionInformation transactionInformation = myAlgoduino.getTransactionInformation("<txid>");
+
+  String type = transactionInformation.type;
+  String tx = transactionInformation.tx;
+  String from = transactionInformation.from;
+  int fee = transactionInformation.fee;
+  long first_round = transactionInformation.first_round;
+  long last_round = transactionInformation.last_round;
+  String noteb64 = transactionInformation.noteb64;
+  long round = transactionInformation.round;
+  long id = transactionInformation.curxfer.id;
+  int amt = transactionInformation.curxfer.amt;
+  String snd = transactionInformation.curxfer.snd;
+  String rcv = transactionInformation.curxfer.rcv;
+  String closeto = transactionInformation.curxfer.closeto;
+  int fromrewards = transactionInformation.fromrewards;
+  String genesisID = transactionInformation.genesisID;
+  String genesishashb64 = transactionInformation.genesishashb64;
+
+  Serial.println(type);
+  Serial.println(tx);
+  Serial.println(from);
+  Serial.println(fee);
+  Serial.println(first_round);
+  Serial.println(last_round);
+  Serial.println(noteb64);
+  Serial.println(round);
+  Serial.println(id);
+  Serial.println(amt);
+  Serial.println(snd);
+  Serial.println(rcv);
+  Serial.println(closeto);
+  Serial.println(fromrewards);
+  Serial.println(genesisID);
+  Serial.println(genesishashb64);
+  Serial.println("");
+
+  delay(500);
 }
 ```
 
 > Output from Serial Monitor
 
-```json
-{
-   "lastRound":6907687,
-   "lastConsensusVersion":"https://github.com/algorandfoundation/specs/tree/8096e2df2da75c3339986317f9abe69d4fa86b4b",
-   "nextConsensusVersion":"https://github.com/algorandfoundation/specs/tree/e5f565421d720c6f75cdd186f7098495caf9101f",
-   "nextConsensusVersionRound":6915065,
-   "nextConsensusVersionSupported":true,
-   "timeSinceLastRound":2319203734,
-   "catchupTime":0,
-   "hasSyncedSinceStartup":false,
-   "stoppedAtUnsupportedRound":false
-}
+```
+pay
+BIZJ4NW67NRL7OCLCO4DJKURDEUH6MWMWNUCNMDBFVUOBLVHUQRQ
+PRICEP3G2F5L6ZG5WTJIAKEQW4OJJ3FM4XVFQDZI7M2VBTFVUHTTR2AU2U
+1000
+7051531
+7052031
+eyJwcmljZV9hbGdvX3VzZCI6MC4yNDM0NTczMjg1NTIyMzYzNywicHJpY2VfYWxnb19idGMiOjAuMDAwMDI1Mzc4MTM1NTAzNzEyNDQ4LCJsYXN0X3RyYWRlX2F0IjoiMjAyMC0wNi0wM1QyMTo0ODo0NC4yM1oiLCJ0aW1lc3RhbXAiOiIyMDIwLTA2LTAzVDIxOjQ4OjU4LjIzMFoifQ==
+7051533
+0
+0
+null
+null
+null
+0
+null
+null
 ```
 ## Security
 
