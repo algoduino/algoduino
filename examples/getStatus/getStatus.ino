@@ -1,6 +1,6 @@
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", TESTNET);
+Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", "<network>");
 
 void setup()
 {
@@ -10,7 +10,28 @@ void setup()
 
 void loop()
 {
-  String status = myAlgoduino.getStatus();
-  Serial.println(status);  
-  delay(2000);
+  Status status = myAlgoduino.getStatus();
+
+  long lastRound = status.lastRound;
+  String lastConsensusVersion = status.lastConsensusVersion;
+  String nextConsensusVersion = status.nextConsensusVersion;
+  long nextConsensusVersionRound = status.nextConsensusVersionRound;
+  bool nextConsensusVersionSupported = status.nextConsensusVersionSupported;
+  long long timeSinceLastRound = status.timeSinceLastRound;
+  int catchupTime = status.catchupTime;
+  bool hasSyncedSinceStartup = status.hasSyncedSinceStartup;
+  bool stoppedAtUnsupportedRound = status.stoppedAtUnsupportedRound;
+
+  Serial.println(lastRound);
+  Serial.println(lastConsensusVersion);
+  Serial.println(nextConsensusVersion);
+  Serial.println(nextConsensusVersionRound);
+  Serial.println(nextConsensusVersionSupported);
+  //Serial.println(timeSinceLastRound);
+  Serial.println(catchupTime);
+  Serial.println(hasSyncedSinceStartup);
+  Serial.println(stoppedAtUnsupportedRound);
+  Serial.println("");
+
+  delay(500);
 }

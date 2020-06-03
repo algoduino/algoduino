@@ -7,6 +7,13 @@
 #######################################
 
 Algoduino	KEYWORD1
+AccountInformation  KEYWORD1
+AssetInformation	KEYWORD1
+LedgerSupply	KEYWORD1
+Status	KEYWORD1
+TransactionInformation	KEYWORD1
+TransactionParams	KEYWORD1
+Version	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
