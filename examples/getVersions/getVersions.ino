@@ -22,15 +22,15 @@ void loop()
   String branch = version.build.branch;
   String channel = version.build.channel;
 
-  Serial.println(versions);
-  Serial.println(genesis_id);
-  Serial.println(genesis_hash_b64);
-  Serial.println(major);
-  Serial.println(minor);
-  Serial.println(build_number);
-  Serial.println(commit_hash);
-  Serial.println(branch);
-  Serial.println(channel);
+  Serial.println("versions: " + versions);
+  Serial.println("genesis_id: " + genesis_id);
+  Serial.println("genesis_hash_b64: " + genesis_hash_b64);
+  Serial.println("major: " + String(major));
+  Serial.println("minor: " + String(minor));
+  Serial.println("build_number: " + String(build_number));
+  Serial.println("commit_hash: " + commit_hash);
+  Serial.println("branch: " + branch);
+  Serial.println("channel: " + channel);
   Serial.println("");
 
   delay(500);

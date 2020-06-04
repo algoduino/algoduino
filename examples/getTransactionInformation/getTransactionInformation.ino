@@ -29,22 +29,22 @@ void loop()
   String genesisID = transactionInformation.genesisID;
   String genesishashb64 = transactionInformation.genesishashb64;
 
-  Serial.println(type);
-  Serial.println(tx);
-  Serial.println(from);
-  Serial.println(fee);
-  Serial.println(first_round);
-  Serial.println(last_round);
-  Serial.println(noteb64);
-  Serial.println(round);
-  Serial.println(id);
-  Serial.println(amt);
-  Serial.println(snd);
-  Serial.println(rcv);
-  Serial.println(closeto);
-  Serial.println(fromrewards);
-  Serial.println(genesisID);
-  Serial.println(genesishashb64);
+  Serial.println("type: " + type);
+  Serial.println("txt: " + tx);
+  Serial.println("from: " + from);
+  Serial.println("fee: " + String(fee));
+  Serial.println("first_round: " + String(first_round));
+  Serial.println("last_round: " + String(last_round));
+  Serial.println("noteb64: " + noteb64);
+  Serial.println("round: " + String(round));
+  Serial.println("id: " + String(id));
+  Serial.println("amt: " + String(amt));
+  Serial.println("snd: " + snd);
+  Serial.println("rcv: " + rcv);
+  Serial.println("closeto: " + closeto);
+  Serial.println("fromrewards: " + String(fromrewards));
+  Serial.println("genesisID: " + genesisID);
+  Serial.println("genesishashb64: " + genesishashb64);
   Serial.println("");
 
   delay(500);

@@ -24,16 +24,16 @@ void loop()
   String freezeaddr = assetInformation.freezeaddr;
   String clawbackaddr = assetInformation.clawbackaddr;
 
-  Serial.println(creator);
-  //Serial.println(total);
-  Serial.println(decimals);
-  Serial.println(defaultfrozen);
-  Serial.println(unitname);
-  Serial.println(assetname);
-  Serial.println(url);
-  Serial.println(managerkey);
-  Serial.println(reserveaddr);
-  Serial.println(freezeaddr);
+  Serial.println("creator: " + creator);
+  //Serial.println("total: " + String(total));
+  Serial.println("decimals: " + String(decimals));
+  Serial.println("defaultfrozen: " + String(defaultfrozen));
+  Serial.println("unitname: " + unitname);
+  Serial.println("assetname: " + assetname);
+  Serial.println("url: " + url);
+  Serial.println("managerkey: " + managerkey);
+  Serial.println("reserveaddr: " + reserveaddr);
+  Serial.println("freezeaddr: " + freezeaddr);
   Serial.println("");
 
   delay(500);

@@ -11,8 +11,13 @@
 #define ARDUINOJSON_USE_LONG_LONG 1
 #include <ArduinoJson.h>
 
+#ifdef ESP8266
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
+#else
+#include <WiFi.h>
+#include <HTTPClient.h>
+#endif
 
 constexpr char *fingerprint = "B8 7C 7E 8F 45 E3 0C 87 72 1A 85 47 71 F8 80 4D E2 BC 8B FE";
 
@@ -41,7 +46,7 @@ Algoduino::Algoduino(String ssid, String password, String apiKey, Network networ
 void Algoduino::begin(void)
 {
   WiFi.mode(WIFI_STA);
-  WiFi.begin(_ssid, _password);
+  WiFi.begin(_ssid.c_str(), _password.c_str());
 }
 
 String Algoduino::getHealth(void)

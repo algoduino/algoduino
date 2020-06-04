@@ -12,7 +12,7 @@ void loop()
 {
   int fee = myAlgoduino.getTransactionsFee();
 
-  Serial.println(fee);
+  Serial.println("fee: " + String(fee));
   Serial.println("");
 
   delay(500);

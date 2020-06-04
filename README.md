@@ -1,7 +1,7 @@
 # Algoduino
 
 <p align="center">
-    <img src="https://github.com/algoduino/algoduino/blob/master/banner.png" />
+    <img src="https://github.com/algoduino/assets/blob/master/banner.png" />
 </p>
 
 > An easy to use Library to interact with the Algorand Blockchain.
@@ -48,22 +48,22 @@ void loop()
   String genesisID = transactionInformation.genesisID;
   String genesishashb64 = transactionInformation.genesishashb64;
 
-  Serial.println(type);
-  Serial.println(tx);
-  Serial.println(from);
-  Serial.println(fee);
-  Serial.println(first_round);
-  Serial.println(last_round);
-  Serial.println(noteb64);
-  Serial.println(round);
-  Serial.println(id);
-  Serial.println(amt);
-  Serial.println(snd);
-  Serial.println(rcv);
-  Serial.println(closeto);
-  Serial.println(fromrewards);
-  Serial.println(genesisID);
-  Serial.println(genesishashb64);
+  Serial.println("type: " + type);
+  Serial.println("txt: " + tx);
+  Serial.println("from: " + from);
+  Serial.println("fee: " + String(fee));
+  Serial.println("first_round: " + String(first_round));
+  Serial.println("last_round: " + String(last_round));
+  Serial.println("noteb64: " + noteb64);
+  Serial.println("round: " + String(round));
+  Serial.println("id: " + String(id));
+  Serial.println("amt: " + String(amt));
+  Serial.println("snd: " + snd);
+  Serial.println("rcv: " + rcv);
+  Serial.println("closeto: " + closeto);
+  Serial.println("fromrewards: " + String(fromrewards));
+  Serial.println("genesisID: " + genesisID);
+  Serial.println("genesishashb64: " + genesishashb64);
   Serial.println("");
 
   delay(500);
@@ -73,22 +73,22 @@ void loop()
 > Output from Serial Monitor
 
 ```
-pay
-BIZJ4NW67NRL7OCLCO4DJKURDEUH6MWMWNUCNMDBFVUOBLVHUQRQ
-PRICEP3G2F5L6ZG5WTJIAKEQW4OJJ3FM4XVFQDZI7M2VBTFVUHTTR2AU2U
-1000
-7051531
-7052031
-eyJwcmljZV9hbGdvX3VzZCI6MC4yNDM0NTczMjg1NTIyMzYzNywicHJpY2VfYWxnb19idGMiOjAuMDAwMDI1Mzc4MTM1NTAzNzEyNDQ4LCJsYXN0X3RyYWRlX2F0IjoiMjAyMC0wNi0wM1QyMTo0ODo0NC4yM1oiLCJ0aW1lc3RhbXAiOiIyMDIwLTA2LTAzVDIxOjQ4OjU4LjIzMFoifQ==
-7051533
-0
-0
-null
-null
-null
-0
-null
-null
+type: pay
+txt: BIZJ4NW67NRL7OCLCO4DJKURDEUH6MWMWNUCNMDBFVUOBLVHUQRQ
+from: PRICEP3G2F5L6ZG5WTJIAKEQW4OJJ3FM4XVFQDZI7M2VBTFVUHTTR2AU2U
+fee: 1000
+first_round: 7051531
+last_round: 7052031
+noteb64: eyJwcmljZV9hbGdvX3VzZCI6MC4yNDM0NTczMjg1NTIyMzYzNywicHJpY2VfYWxnb19idGMiOjAuMDAwMDI1Mzc4MTM1NTAzNzEyNDQ4LCJsYXN0X3RyYWRlX2F0IjoiMjAyMC0wNi0wM1QyMTo0ODo0NC4yM1oiLCJ0aW1lc3RhbXAiOiIyMDIwLTA2LTAzVDIxOjQ4OjU4LjIzMFoifQ==
+round: 7051533
+id: 0
+amt: 0
+snd: null
+rcv: null
+closeto: null
+fromrewards: 0
+genesisID: null
+genesishashb64: null
 ```
 ## Security
 

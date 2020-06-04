@@ -19,12 +19,12 @@ void loop()
   String consensusVersion = transactionParams.consensusVersion;
   int minFee = transactionParams.minFee;
 
-  Serial.println(fee);
-  Serial.println(genesisID);
-  Serial.println(genesishashb64);
-  Serial.println(lastRound);
-  Serial.println(consensusVersion);
-  Serial.println(minFee);
+  Serial.println("fee: " + String(fee));
+  Serial.println("genesisID: " + genesisID);
+  Serial.println("genesishashb64: " + genesishashb64);
+  Serial.println("lastRound: " + String(lastRound));
+  Serial.println("consensusVersion: " + consensusVersion);
+  Serial.println("minFee: " + String(minFee));
   Serial.println("");
 
   delay(500);

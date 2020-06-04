@@ -25,18 +25,18 @@ void loop()
   long votelst = accountInformation.participation.votelst;
   int votekd = accountInformation.participation.votekd;
 
-  Serial.println(round);
-  Serial.println(address);
-  //Serial.println(amount);
-  //Serial.println(pendingrewards);
-  //Serial.println(amountwithoutpendingrewards);
-  //Serial.println(rewards);
-  Serial.println(status);
-  Serial.println(partpkb64);
-  Serial.println(vrfpkb64);
-  Serial.println(votefst);
-  Serial.println(votelst);
-  Serial.println(votekd);
+  Serial.println("round: " + String(round));
+  Serial.println("address: " + address);
+  //Serial.println("amount: " + String(amount));
+  //Serial.println("pendingrewards: " + String(pendingrewards));
+  //Serial.println("amountwithoutpendingrewards: " + String(amountwithoutpendingrewards));
+  //Serial.println("rewards: " + String(rewards));
+  Serial.println("status: " + status);
+  Serial.println("partpkb64: " + partpkb64);
+  Serial.println("vrfpkb64: " + vrfpkb64);
+  Serial.println("votefst: " + String(votefst));
+  Serial.println("votelst: " + String(votelst));
+  Serial.println("votekd: " + String(votekd));
   Serial.println("");
 
   delay(500);

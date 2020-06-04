@@ -22,15 +22,15 @@ void loop()
   bool hasSyncedSinceStartup = status.hasSyncedSinceStartup;
   bool stoppedAtUnsupportedRound = status.stoppedAtUnsupportedRound;
 
-  Serial.println(lastRound);
-  Serial.println(lastConsensusVersion);
-  Serial.println(nextConsensusVersion);
-  Serial.println(nextConsensusVersionRound);
-  Serial.println(nextConsensusVersionSupported);
-  //Serial.println(timeSinceLastRound);
-  Serial.println(catchupTime);
-  Serial.println(hasSyncedSinceStartup);
-  Serial.println(stoppedAtUnsupportedRound);
+  Serial.println("lastRound: " + String(lastRound));
+  Serial.println("lastConsensusVersion: " + lastConsensusVersion);
+  Serial.println("nextConsensusVersion: " + nextConsensusVersion);
+  Serial.println("nextConsensusVersionRound: " + String(nextConsensusVersionRound));
+  Serial.println("nextConsensusVersionSupported: " + String(nextConsensusVersionSupported));
+  //Serial.println("timeSinceLastRound: " + String(timeSinceLastRound));
+  Serial.println("catchupTime: " + String(catchupTime));
+  Serial.println("hasSyncedSinceStartup: " + String(hasSyncedSinceStartup));
+  Serial.println("stoppedAtUnsupportedRound: " + String(stoppedAtUnsupportedRound));
   Serial.println("");
 
   delay(500);
