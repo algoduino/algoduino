@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/algoduino/algoduino.git"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "authors": [
     {
       "name": "Algoduino",
@@ -15,8 +15,19 @@
       "url": "https://github.com/algoduino"
     }
   ],
+  "dependencies": [
+    {
+      "name": "ArduinoJson",
+      "version": "6.15.2"
+    }
+  ],
   "frameworks": "arduino",
   "platforms": [
-    ["espressif8266","espressif32","esp8266","esp32"]
+    [
+      "espressif8266",
+      "espressif32",
+      "esp8266",
+      "esp32"
+    ]
   ]
 }
