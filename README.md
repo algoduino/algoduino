@@ -96,4 +96,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Algoduino](https://www.algoduino.com/)
+[MIT](LICENSE) © [Algoduino](https://algoduino.com/)
