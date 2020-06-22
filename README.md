@@ -8,6 +8,7 @@
 
 > Lead Maintainer: [Ted Nivan](https://github.com/TedNIVAN)
 
+> <img src="https://www.ardu-badge.com/badge/Algoduino.svg" />
 ## Documentation
 
 You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://algoduino.github.io/documentation/class_algoduino.html).
