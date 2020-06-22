@@ -1,7 +1,7 @@
 # Algoduino
 
 <p align="center">
-    <img src="https://github.com/algoduino/assets/blob/master/banner.png" />
+    <img src="https://github.com/algoduino/assets/blob/master/Algoduino-banner.png" />
 </p>
 
 > An easy to use Library to interact with the Algorand Blockchain.
