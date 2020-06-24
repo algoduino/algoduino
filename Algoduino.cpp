@@ -19,6 +19,7 @@
 #include <HTTPClient.h>
 #endif
 
+/// Fingerprint Not Valid After: Sunday 13 September 2020 at 14:00:00 Central European Summer Time. 
 constexpr char *fingerprint = "B8 7C 7E 8F 45 E3 0C 87 72 1A 85 47 71 F8 80 4D E2 BC 8B FE";
 
 Algoduino::Algoduino(String ssid, String password, String apiKey, Network network)

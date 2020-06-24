@@ -155,7 +155,7 @@ private:
   /// API key to connect to a node.
   String _apiKey;
 
-  /// Requested endpoint URL
+  /// Requested endpoint URL.
   String _endpoint;
 
   /**
