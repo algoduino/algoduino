@@ -1,6 +1,6 @@
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>, "<fingerprint>");
+Algoduino myAlgoduino = Algoduino(<ssid>, <password>, <apiKey>, <network>, <fingerprint>);
 
 void setup()
 {
@@ -10,7 +10,7 @@ void setup()
 
 void loop()
 {
-  AssetInformation assetInformation = myAlgoduino.getAssetInformation("<index>");
+  AssetInformation assetInformation = myAlgoduino.getAssetInformation(<index>);
 
   String creator = assetInformation.creator;
   long long total = assetInformation.total;

@@ -1,6 +1,6 @@
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>, "<fingerprint>");
+Algoduino myAlgoduino = Algoduino(<ssid>, <password>, <apiKey>, <network>, <fingerprint>);
 
 void setup()
 {
@@ -10,7 +10,7 @@ void setup()
 
 void loop()
 {
-  AccountInformation accountInformation = myAlgoduino.getAccountInformation("<address>");
+  AccountInformation accountInformation = myAlgoduino.getAccountInformation(<address>);
 
   long round = accountInformation.round;
   String address = accountInformation.address;

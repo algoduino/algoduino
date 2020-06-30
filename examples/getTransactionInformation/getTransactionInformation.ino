@@ -1,6 +1,6 @@
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>, "<fingerprint>");
+Algoduino myAlgoduino = Algoduino(<ssid>, <password>, <apiKey>, <network>, <fingerprint>);
 
 void setup()
 {
@@ -10,7 +10,7 @@ void setup()
 
 void loop()
 {
-  TransactionInformation transactionInformation = myAlgoduino.getTransactionInformation("<txid>");
+  TransactionInformation transactionInformation = myAlgoduino.getTransactionInformation(<txid>);
 
   String type = transactionInformation.type;
   String tx = transactionInformation.tx;
