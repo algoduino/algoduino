@@ -19,14 +19,12 @@
 #include <HTTPClient.h>
 #endif
 
-/// Fingerprint Not Valid After: Sunday 13 September 2020 at 14:00:00 Central European Summer Time. 
-constexpr char *fingerprint = "B8 7C 7E 8F 45 E3 0C 87 72 1A 85 47 71 F8 80 4D E2 BC 8B FE";
-
-Algoduino::Algoduino(String ssid, String password, String apiKey, Network network)
+Algoduino::Algoduino(String ssid, String password, String apiKey, Network network, String fingerprint)
 {
   _ssid = ssid;
   _password = password;
   _apiKey = apiKey;
+  _fingerprint = fingerprint;
 
   switch (network)
   {
@@ -313,7 +311,7 @@ String Algoduino::_fetch(String route)
   {
     HTTPClient https;
 
-    if (https.begin(_endpoint + route, fingerprint))
+    if (https.begin(_endpoint + route, _fingerprint))
     {
       https.addHeader("accept", "application/json");
       https.addHeader("x-api-key", _apiKey);

@@ -1,6 +1,6 @@
 #include <Algoduino.h>
 
-Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>);
+Algoduino myAlgoduino = Algoduino("<ssid>", "<password>", "<apiKey>", <network>, "<fingerprint>");
 
 void setup()
 {

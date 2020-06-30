@@ -158,6 +158,9 @@ private:
   /// Requested endpoint URL.
   String _endpoint;
 
+  /// Fingerprint of the API provider.
+  String _fingerprint;
+
   /**
    * @brief Fetch the requested information from the API.
    * @param route API route.
